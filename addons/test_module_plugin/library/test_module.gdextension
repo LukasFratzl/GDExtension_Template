@@ -5,5 +5,5 @@ compatibility_minimum = "4.2"
 
 [libraries]
 
-linux.debug.x86_64 = "res://addons/test_module_plugin/library/test_module.linux.template_debug.x86_64.so"
+linux.debug.x86_64 = "res://addons/test_module_plugin/library/libtest_module.linux.template_debug.x86_64.so"
 windows.debug.x86_64 = "res://addons/test_module_plugin/library/test_module.windows.template_debug.x86_64.dll"

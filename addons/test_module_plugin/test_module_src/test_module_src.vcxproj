@@ -60,7 +60,9 @@
     <ClInclude Include="src\register_types.h" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\library\test_module.gdextension" />
     <Content Include="run.bat" />
+    <Content Include="run.sh" />
     <Content Include="SConstruct" />
     <Content Include="src\MyCustomNode.os" />
     <Content Include="src\MyCustomNode.windows.template_debug.x86_64.obj" />

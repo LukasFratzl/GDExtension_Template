@@ -1,25 +1,39 @@
 #!/bin/bash
 
-module_name="TestModule"
-godot_path="/home/flow____/.steam/debian-installation/steamapps/common/Godot Engine/godot.x11.opt.tools.64"
+# Define Godot path (modify if needed)
+godot_path="/home/flow____/Downloads/Godot_v4.2.2-stable_linux.x86_64(1)/Godot_v4.2.2-stable_linux.x86_64"  # Replace with actual path
 
-# Navigate to TestModule directory
-cd "$module_name"
-
-# Run scons to build the project
+# Run scons
 scons
 
-# Check if the build failed (exit code of scons is non-zero)
+# Check if scons build failed (exit code)
 if [[ $? -ne 0 ]]; then
   echo "Error: scons build failed. Exiting..."
   exit 1
 fi
 
-# Wait for a few seconds to ensure the build is complete
-sleep 1
+# Store current directory (alternative to set "currentDir=%cd%")
+current_dir=$(pwd)
 
-# Navigate back to the previous directory (parent of module_Name)
-cd ..
+# Loop to search for Godot project
+while true; do
+  # Check for *.godot files
+  if [[ $(find "$PWD" -maxdepth 1  -type f -name "*.godot") ]]; then
+    echo "Found Godot project in $(pwd)."
+    break
+  fi
 
-# Start the Godot editor
+  # Check if reached starting directory
+  if [[ $(pwd) == "/" ]]; then
+    echo "Godot project not found in any parent directories."
+    exit 1
+  fi
+
+  # Move up one directory
+  cd ..
+done
+
+# Launch Godot with project (assuming single project)
 "$godot_path" godot -e
+
+# Pop directory is not applicable in Bash (no directory stack)
