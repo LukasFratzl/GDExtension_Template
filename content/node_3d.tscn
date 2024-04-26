@@ -1,12 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://600os62sjh2e"]
+[gd_scene load_steps=2 format=3 uid="uid://600os62sjh2e"]
 
 [ext_resource type="Script" path="res://scripts/test_gd_script.gd" id="1_2gn04"]
-[ext_resource type="Script" path="res://scripts/test_csharp_script.cs" id="2_wrso1"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MyCustomNode_GDScript" type="MyCustomNode" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+editor_description = ""
 script = ExtResource("1_2gn04")
-
-[node name="MyCustomNode_CSharp" type="MyCustomNode" parent="."]
-script = ExtResource("2_wrso1")
