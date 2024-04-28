@@ -10,7 +10,7 @@
 
 using namespace godot;
 
-void initialize_TestModule_module(ModuleInitializationLevel p_level);
-void uninitialize_TestModule_module(ModuleInitializationLevel p_level);
+void initialize_test_module(ModuleInitializationLevel p_level);
+void uninitialize_test_module(ModuleInitializationLevel p_level);
 
 #endif // TESTMODULE_REGISTER_TYPES_H

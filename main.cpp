@@ -1,5 +1,5 @@
 #include <iostream>
-#include "src/HelperTestModule.h"
+#include "src/HelperTestModule.hpp"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;

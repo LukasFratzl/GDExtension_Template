@@ -10,7 +10,7 @@ env.Append(CPPPATH="src/")
 
 src = Glob("src/*.cpp")
 
-libpath = "../bin/lib{}{}{}".format(module_name, env["suffix"], env["SHLIBSUFFIX"])
+libpath = "godot-project/addons/{}/bin/lib{}{}{}".format(module_name, module_name, env["suffix"], env["SHLIBSUFFIX"])
 sharedlib = env.SharedLibrary(libpath, src)
 Default(sharedlib)
 

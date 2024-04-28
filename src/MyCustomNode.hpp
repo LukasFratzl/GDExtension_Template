@@ -6,7 +6,7 @@
 #include <godot_cpp/classes/texture2d.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>
 
-#include "HelperTestModule.h"
+#include "HelperTestModule.hpp"
 
 
 using namespace godot;

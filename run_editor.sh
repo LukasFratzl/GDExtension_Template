@@ -12,26 +12,27 @@ if [[ $? -ne 0 ]]; then
   exit 1
 fi
 
-# Store current directory (alternative to set "currentDir=%cd%")
-current_dir=$(pwd)
-
-# Loop to search for Godot project
-while true; do
-  # Check for *.godot files
-  if [[ $(find "$PWD" -maxdepth 1  -type f -name "*.godot") ]]; then
-    echo "Found Godot project in $(pwd)."
-    break
-  fi
-
-  # Check if reached starting directory
-  if [[ $(pwd) == "/" ]]; then
-    echo "Godot project not found in any parent directories."
-    exit 1
-  fi
-
-  # Move up one directory
-  cd ..
-done
+## Store current directory (alternative to set "currentDir=%cd%")
+#current_dir=$(pwd)
+#
+## Loop to search for Godot project
+#while true; do
+#  # Check for *.godot files
+#  if [[ $(find "$PWD" -maxdepth 1  -type f -name "*.godot") ]]; then
+#    echo "Found Godot project in $(pwd)."
+#    break
+#  fi
+#
+#  # Check if reached starting directory
+#  if [[ $(pwd) == "/" ]]; then
+#    echo "Godot project not found in any parent directories."
+#    exit 1
+#  fi
+#
+#  # Move up one directory
+#  cd ..
+#done
+cd "godot-project"
 
 # Launch Godot with project (assuming single project)
 "$godot_path" -e

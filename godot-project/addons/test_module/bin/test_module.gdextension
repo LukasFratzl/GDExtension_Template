@@ -1,0 +1,9 @@
+[configuration]
+
+entry_symbol = "test_module_library_init"
+compatibility_minimum = "4.2"
+
+[libraries]
+
+linux.debug.x86_64 = "res://addons/test_module/bin/libtest_module.linux.template_debug.x86_64.so"
+windows.debug.x86_64 = "res://addons/test_module/bin/libtest_module.windows.template_debug.x86_64.dll"
