@@ -1,3 +1,6 @@
 [submodule "addons/test_module_plugin/test_module_src/godot-cpp"]
 	path = addons/test_module_plugin/test_module_src/godot-cpp
 	url = https://github.com/godotengine/godot-cpp.git
+[submodule "godot-cpp"]
+	path = godot-cpp
+	url = https://github.com/godotengine/godot-cpp.git
