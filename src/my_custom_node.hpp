@@ -21,21 +21,17 @@ public:
   Ref<Texture2D> texture_value;
 
   _FORCE_INLINE_ int32_t get_my_int() const { return int_value; }
-
   _FORCE_INLINE_ void set_my_int(int32_t Value) { int_value = Value; }
 
   _FORCE_INLINE_ float_t get_my_float() const { return float_value; }
-
   _FORCE_INLINE_ void set_my_float(float_t Value) { float_value = Value; }
 
   _FORCE_INLINE_ const String &get_my_string() const { return string_value; }
-
   _FORCE_INLINE_ void set_my_string(const String &Value) {
     string_value = Value;
   }
 
   _FORCE_INLINE_ Ref<Texture2D> get_my_texture() const { return texture_value; }
-
   _FORCE_INLINE_ void set_my_texture(const Ref<Texture2D> Value) {
     texture_value = Value;
   }
@@ -46,12 +42,18 @@ public:
   void start_test() {
     UtilityFunctions::print("Hello from GDC Extensions ... :)");
   }
+  void start_test_with_arguments(const String &message) {
+    UtilityFunctions::print(message);
+  }
 
 protected:
   // the _bind_methods naming convention with snake_case
   // because it's a private/protected or virtual function with Underscores
   static void _bind_methods() {
     ClassDB::bind_method(D_METHOD("start_test"), &MyCustomNode::start_test);
+    ClassDB::bind_method(D_METHOD("start_test_with_arguments"),
+                         &MyCustomNode::start_test_with_arguments,
+                         MethodInfo(Variant::STRING, "message"));
 
     HelperTestModule_Lf::add_property_single(
         MyCustomNode::get_class_static(), "my_int", &MyCustomNode::get_my_int,
