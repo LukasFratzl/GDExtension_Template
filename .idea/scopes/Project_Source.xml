@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Project Source" pattern="!file:*.os&amp;&amp;!file:*obj" />
+</component>

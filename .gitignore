@@ -1,8 +1,8 @@
 # CLion project files
-.idea
+# .idea EDIT: Removed Ignore because .idea has it's own jetbrains ignore in the .idea folder
 cmake-build-*
+
+# Compiler Generated Files
 *.os
-
 *.obj
-
 *.dblite

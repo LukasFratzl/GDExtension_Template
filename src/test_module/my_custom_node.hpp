@@ -3,6 +3,7 @@
 #define MY_CUSTOM_NODE_H
 
 #include "helper_test_module.hpp"
+// include with <> preferred for godot types over ""
 #include <godot_cpp/classes/node3d.hpp>
 #include <godot_cpp/classes/texture2d.hpp>
 #include <godot_cpp/variant/utility_functions.hpp>
