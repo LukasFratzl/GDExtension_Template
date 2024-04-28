@@ -1,3 +1,0 @@
-/home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src/cmake-build-debug/CMakeFiles/test_module_src.dir
-/home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

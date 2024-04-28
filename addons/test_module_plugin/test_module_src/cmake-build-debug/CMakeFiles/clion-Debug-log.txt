@@ -1,4 +1,0 @@
-/home/flow____/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/241.15989.121/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/flow____/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/241.15989.121/bin/ninja/linux/x64/ninja -G Ninja -S "/home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src" -B "/home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src/cmake-build-debug"
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /home/flow____/Documents/Godot Projects/GDExtension_Template/addons/test_module_plugin/test_module_src/cmake-build-debug
