@@ -1,6 +1,8 @@
 #ifndef HELPERTESTMODULE_LF_H
 #define HELPERTESTMODULE_LF_H
 
+#include <godot_cpp/core/class_db.hpp>
+
 using namespace godot;
 
 class HelperTestModule_Lf
