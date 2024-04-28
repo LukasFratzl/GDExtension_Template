@@ -2,11 +2,10 @@
 #ifndef MY_CUSTOM_NODE_H
 #define MY_CUSTOM_NODE_H
 
-#include "godot_cpp/classes/node3d.hpp"
-#include "godot_cpp/classes/texture2d.hpp"
-#include "godot_cpp/variant/utility_functions.hpp"
-
 #include "helper_test_module.hpp"
+#include <godot_cpp/classes/node3d.hpp>
+#include <godot_cpp/classes/texture2d.hpp>
+#include <godot_cpp/variant/utility_functions.hpp>
 
 using namespace godot;
 
@@ -51,7 +50,7 @@ protected:
     ClassDB::bind_method(D_METHOD("start_test"), &MyCustomNode::start_test);
     ClassDB::bind_method(D_METHOD("start_test_with_arguments"),
                          &MyCustomNode::start_test_with_arguments,
-                         Variant("This is a test..."));
+                         Variant::STRING);
 
     HelperTestModule::add_property_single(
         MyCustomNode::get_class_static(), "my_int", &MyCustomNode::get_my_int,

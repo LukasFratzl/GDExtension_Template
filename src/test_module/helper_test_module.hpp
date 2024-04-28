@@ -1,7 +1,7 @@
 #ifndef HELPER_TEST_MODULE_H
 #define HELPER_TEST_MODULE_H
 
-#include "godot_cpp/core/class_db.hpp"
+#include <godot_cpp/core/class_db.hpp>
 
 using namespace godot;
 
