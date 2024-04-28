@@ -11,7 +11,7 @@
 #include <godot_cpp/core/defs.hpp>
 #include <godot_cpp/godot.hpp>
 
-#include "MyCustomNode.hpp"
+#include "my_custom_node.hpp"
 
 using namespace godot;
 

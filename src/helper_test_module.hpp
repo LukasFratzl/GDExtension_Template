@@ -1,5 +1,5 @@
-#ifndef HELPERTESTMODULE_LF_H
-#define HELPERTESTMODULE_LF_H
+#ifndef HELPERTESTMODULE_Lf_H
+#define HELPERTESTMODULE_Lf_H
 
 #include <godot_cpp/core/class_db.hpp>
 
