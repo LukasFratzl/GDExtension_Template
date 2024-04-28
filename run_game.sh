@@ -3,6 +3,8 @@
 # Define Godot path (modify if needed)
 godot_path="/home/flow____/Downloads/Godot_v4.2.2-stable_linux.x86_64(1)/Godot_v4.2.2-stable_linux.x86_64"  # Replace with actual path
 
+#godot_path="/home/flow____/Downloads/Godot_v4.2.2-stable_mono_linux_x86_64/Godot_v4.2.2-stable_mono_linux.x86_64"
+
 # Run scons
 scons
 

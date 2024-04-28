@@ -14,3 +14,7 @@ config/name="godot-project"
 run/main_scene="res://content/test_map.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://content/icon.svg"
+
+[dotnet]
+
+project/assembly_name="godot-project"
