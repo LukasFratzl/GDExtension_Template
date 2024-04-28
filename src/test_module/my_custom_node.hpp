@@ -1,14 +1,16 @@
 // #ifndef preferred over #pragma once
-#ifndef MYCUSTOMNODE_H
-#define MYCUSTOMNODE_H
+#ifndef MY_CUSTOM_NODE_H
+#define MY_CUSTOM_NODE_H
 
-#include <godot_cpp/classes/node3d.hpp>
-#include <godot_cpp/classes/texture2d.hpp>
-#include <godot_cpp/variant/utility_functions.hpp>
+#include "godot_cpp/classes/node3d.hpp"
+#include "godot_cpp/classes/texture2d.hpp"
+#include "godot_cpp/variant/utility_functions.hpp"
 
 #include "helper_test_module.hpp"
 
 using namespace godot;
+
+namespace test_module {
 
 // PascalCase for Classed and Nodes
 class MyCustomNode : public Node3D {
@@ -53,27 +55,29 @@ protected:
     ClassDB::bind_method(D_METHOD("start_test"), &MyCustomNode::start_test);
     ClassDB::bind_method(D_METHOD("start_test_with_arguments"),
                          &MyCustomNode::start_test_with_arguments,
-                         MethodInfo(Variant::STRING, "message"));
+                         Variant::STRING);
 
-    HelperTestModule_Lf::add_property_single(
+    HelperTestModule::add_property_single(
         MyCustomNode::get_class_static(), "my_int", &MyCustomNode::get_my_int,
         &MyCustomNode::set_my_int, Variant::INT);
 
-    HelperTestModule_Lf::add_property_single(
+    HelperTestModule::add_property_single(
         MyCustomNode::get_class_static(), "my_float",
         &MyCustomNode::get_my_float, &MyCustomNode::set_my_float,
         Variant::FLOAT);
 
-    HelperTestModule_Lf::add_property_single(
+    HelperTestModule::add_property_single(
         MyCustomNode::get_class_static(), "my_string",
         &MyCustomNode::get_my_string, &MyCustomNode::set_my_string,
         Variant::STRING);
 
-    HelperTestModule_Lf::add_property_single(
+    HelperTestModule::add_property_single(
         MyCustomNode::get_class_static(), "my_texture",
         &MyCustomNode::get_my_texture, &MyCustomNode::set_my_texture,
         Variant::OBJECT, PROPERTY_HINT_RESOURCE_TYPE, "Texture2D");
   }
 };
 
-#endif
+} // namespace test_module
+
+#endif // MY_CUSTOM_NODE_H
